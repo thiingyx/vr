@@ -11,7 +11,29 @@
 
     <a-scene physics>
       
-      <a-box dynamic-body position="-0.85 0.5 -3.25" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-assets>
+        <img id="sol" src="./assets/img/casino_sol.jpg">
+        <img id="mur" src="./assets/img/casino_mur.jpg"> 
+        <a-asset-item id="dollar.glb" src="./3Dmodels/casino/dollar.glb"></a-asset-item>
+        <a-asset-item id="arcade_machine.glb" src="./3Dmodels/casino/arcade_machine.glb"></a-asset-item>
+        <a-asset-item id="casino_slot_machine.glb" src="./3Dmodels/casino/casion_slot_machine.glb"></a-asset-item>
+        <a-asset-item id="roulette_table.glb" src="./3Dmodels/casino/roulette_table.glb"></a-asset-item>
+        <a-asset-item id="indoor_plant.glb" src="./3Dmodels/casino/indoor_plant.glb"></a-asset-item>
+      </a-assets>
+
+      <a-entity static-body gltf-model="#arcade_machine.glb" position="-1.22 0.65 -0.936" scale="2 2 2" rotation="0 80 0"></a-entity>
+      <a-entity static-body gltf-model="#casino_slot_machine.glb" position="0.125 0.75 -5.109" scale="0.75 0.75 0.75" rotation="0 0 0"></a-entity>
+      <a-entity static-body gltf-model="#casino_slot_machine.glb" position="0.970 0.75 -5.109" scale="0.75 0.75 0.75" rotation="0 0 0"></a-entity>
+      <a-entity static-body gltf-model="#casino_slot_machine.glb" position="-0.740 0.75 -5.109" scale="0.75 0.75 0.75" rotation="0 0 0"></a-entity>
+      <a-entity static-body gltf-model="#roulette_table.glb" position="2.06 0.33 -4.10" scale="1.25 1.25 1.25" rotation="0 210 0"></a-entity>
+      <a-entity static-body gltf-model="#indoor_plant.glb" position="-1.29 0.010 -3.439" scale="0.5 0.5 0.5" rotation="0 0 0"></a-entity>
+
+      
+      <a-entity dynamic-body gltf-model="#dollar.glb" position="-1 2 -3" scale="0.1 0.1 0.1" rotation="0 0 0"></a-entity>
+
+
+
+      <!-- <a-box dynamic-body position="-0.85 0.5 -3.25" rotation="0 0 0" color="#4CC3D9"></a-box>
       <a-box dynamic-body position="0.25 0.5 -4.12" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-box dynamic-body position="-0.5 2.4 -3.65" rotation="-90 45 0" color="#4CC3D9" ></a-box>
       <a-box dynamic-body position="0.90 1.8 -4.75" rotation="0 77 180" color="#4CC3D9" ></a-box>
@@ -28,17 +50,22 @@
 
       <a-box dynamic-body position="0.66 7 -4" rotation="0 50 90" color="#4CC3D9"></a-box>
       <a-box dynamic-body position="-0.47 8 -3.93" rotation="0 50 90" color="#4CC3D9"></a-box>
-      <a-box dynamic-body position="-0.93 7.12 -5.093" rotation="0 50 90" color="#4CC3D9"></a-box>
+      <a-box dynamic-body position="-0.93 7.12 -5.093" rotation="0 50 90" color="#4CC3D9"></a-box> --> 
 
-      <a-plane static-body position="0 1.5 -2.5" rotation="0 0 0" width="3" height="3" visible="false"></a-plane>
-      <a-plane static-body position="0 1.5 -5.5" rotation="0 0 0" width="3" height="3" visible="false"></a-plane>
-      <a-plane static-body position="1.5 1.5 -4" rotation="0 90 0" width="3" height="3" visible="false"></a-plane>
-      <a-plane static-body position="-1.5 1.5 -4" rotation="0 90 0" width="3" height="3" visible="false"></a-plane>
+      <a-plane src="#mur" static-body position="0 1.5 -2.5" rotation="0 0 0" width="3" height="3"></a-plane>
+      <a-plane src="#mur" static-body position="0 1.5 -5.5" rotation="0 0 0" width="3" height="3" ></a-plane>
+      <a-plane src="#mur" static-body position="1.5 1.5 -4" rotation="0 90 0" width="3" height="3" ></a-plane>
+      <a-plane src="#mur" static-body position="-1.5 1.5 -4" rotation="0 90 0" width="3" height="3" ></a-plane>
       
       
-      <a-plane static-body position="0 0 -4" rotation="-90 0 0" width="3" height="3" color="#7BC8A4"></a-plane>
+      <a-plane static-body position="0 0 -4" rotation="-90 0 0" width="3" height="3" src="#sol"></a-plane>
       <a-plane static-body position="0 0 0" rotation="-90 0 0" width="100" height="100" visible="false"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
+
+      <a-entity camera look-controls wasd-controls="acceleration: 10" position="0 1.6 -4"></a-entity>
+       
+
+
     </a-scene physics>
 
   </body>
