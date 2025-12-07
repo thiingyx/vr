@@ -1,0 +1,11 @@
+Model Information:
+* title:	black and white cat walking
+* source:	https://sketchfab.com/3d-models/black-and-white-cat-walking-cf261766794547dd994e5fa235fcc106
+* author:	Jonathan.Burton.Peters.Jr. (https://sketchfab.com/Jonathan.Burton.Peters.Jr.)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "black and white cat walking" (https://sketchfab.com/3d-models/black-and-white-cat-walking-cf261766794547dd994e5fa235fcc106) by Jonathan.Burton.Peters.Jr. (https://sketchfab.com/Jonathan.Burton.Peters.Jr.) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

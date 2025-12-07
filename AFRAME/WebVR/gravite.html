@@ -1,0 +1,123 @@
+<html>
+
+  <head>
+
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.2/dist/aframe-physics-system.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <a-scene physics>
+      
+      <a-assets>
+        <img id="sol" src="./assets/img/sol.jpg">
+        <img id="plafond" src="./assets/img/plafond.jpg">
+        <img id="mur" src="./assets/img/mur.jpg">
+        <img id="tag1" src="./assets/img/tag1.png">
+        <img id="tag2" src="./assets/img/tag2.png">
+        <img id="tag3" src="./assets/img/tag3.png">
+        <img id="tag4" src="./assets/img/tag4.png">
+
+        <a-asset-item id="toilet.glb" src="./3Dmodels/toilettes/toilet.glb"></a-asset-item>
+        <a-asset-item id="sink.glb" src="./3Dmodels/toilettes/sink.glb"></a-asset-item>
+        <a-asset-item id="coat_rack.glb" src="./3Dmodels/toilettes/coat_rack.glb"></a-asset-item>
+        <a-asset-item id="toilet_paper.glb" src="./3Dmodels/toilettes/toilet_paper.glb"></a-asset-item>
+        <a-asset-item id="spraypaint.glb" src="./3Dmodels/toilettes/spraypaint.glb"></a-asset-item>
+        <a-asset-item id="bin.glb" src="./3Dmodels/toilettes/garbage_bin.glb"></a-asset-item>
+        <a-asset-item id="caution_wet_floor.glb" src="./3Dmodels/toilettes/caution_wet_floor.glb"></a-asset-item>
+        <a-asset-item id="cleaning_cart" src="./assets/gltf/cleaning_cart/scene.gltf"></a-asset-item>
+        <a-asset-item id="lamp" src="./assets/gltf/lamp/scene.gltf"></a-asset-item>
+        <a-asset-item id="garbage_bag.glb" src="./3Dmodels/toilettes/a_bag_of_garbage..glb"></a-asset-item>
+        <a-asset-item id="grass.glb" src="./3Dmodels/toilettes/grass.glb"></a-asset-item>
+        <a-asset-item id="grass2.glb" src="./3Dmodels/toilettes/grass_04.glb"></a-asset-item>
+        <a-asset-item id="palmier.glb" src="./3Dmodels/toilettes/palmier.glb"></a-asset-item>
+        <a-asset-item id="liane.glb" src="./3Dmodels/toilettes/basic_game_ready_plant.glb"></a-asset-item>
+        <a-asset-item id="liane2" src="./assets/gltf/liane2/scene.gltf"></a-asset-item>
+        <a-asset-item id="grass3.glb" src="./3Dmodels/toilettes/all_plants.glb"></a-asset-item>
+  
+      </a-assets>
+
+      <a-entity static-body gltf-model="#toilet.glb" position="-0.70 0 -3.20" scale="1 1 1" rotation="0 90 0"></a-entity>
+      <a-entity static-body gltf-model="#toilet.glb" position="0.625 0 -3.20" scale="1 1 1" rotation="0 90 0"></a-entity>
+
+      <a-entity static-body gltf-model="#sink.glb" position="-0.60 1 -5.15" scale="0.3 0.3 0.3" rotation="0 -90 0"></a-entity>
+      <a-entity static-body gltf-model="#sink.glb" position="0.55 1 -5.15" scale="0.3 0.3 0.3" rotation="0 -90 0"></a-entity>
+     
+      <a-entity static-body gltf-model="#coat_rack.glb" position="-1.46 1.6 -4.106" scale="0.75 0.75 0.75" rotation="0 90 0"></a-entity>
+
+      <a-entity static-body gltf-model="#toilet_paper.glb" position="-1.5 0.803 -3.186" scale="1.5 1.5 1.5" rotation="0 90 0"></a-entity>
+      <a-entity static-body gltf-model="#toilet_paper.glb" position="1.5 0.803 -3.186" scale="1.5 1.5 1.5" rotation="0 270 0"></a-entity>
+     
+      <a-entity static-body gltf-model="#spraypaint.glb" position="-1.21 0 -4.17" scale="1 1 1" rotation="0 0 0"></a-entity> 
+      <a-entity static-body gltf-model="#spraypaint.glb" position="-1.29 0 -4.30" scale="1 1 1" rotation="0 0 0"></a-entity>
+      <a-entity static-body gltf-model="#spraypaint.glb" position="-1.11 0.042 -4.368" scale="1 1 1" rotation="0 -40 90"></a-entity>
+
+      <a-entity static-body gltf-model="#caution_wet_floor.glb" position="0.108 0 -4.069" scale="0.005 0.005 0.005" rotation="0 120 0"></a-entity>
+
+      <a-entity static-body gltf-model="#bin.glb" position="1.204 0.042 -5.126" scale="0.75 0.75 0.75" rotation="0 0 0"></a-entity>
+
+      <a-entity static-body gltf-model="#cleaning_cart" position="0.953 0 -3.943" scale="0.20 0.25 0.20" rotation="0 -20 0"></a-entity>
+
+      <a-entity static-body gltf-model="#lamp" position="0 2.915 -4" scale="1.25 1.25 1.25" rotation="0 0 0"></a-entity>
+
+      <a-entity static-body gltf-model="#garbage_bag.glb" position="0.667 0 -5.256" scale="1 1 1" rotation="0 0 0"></a-entity>
+      <a-entity static-body gltf-model="#garbage_bag.glb" position="0.844 0 -4.764" scale="1 1 1" rotation="0 0 0"></a-entity>
+
+
+
+      <a-entity static-body gltf-model="#grass.glb" position="-0.25 0 -5.166" scale="0.01 0.01 0.01" rotation="0 45 0"></a-entity>
+      <a-entity static-body gltf-model="#grass.glb" position="-1.080 0 -3.765" scale="0.01 0.01 0.01" rotation="0 0 0"></a-entity>
+      <a-entity static-body gltf-model="#grass.glb" position="0.90 0 -3.592" scale="0.01 0.01 0.01" rotation="0 180 0"></a-entity>
+
+      <a-entity static-body gltf-model="#grass2.glb" position="-0.65 0.391 -3.211" scale="0.15 0.15 0.15" rotation="0 0 0"></a-entity>
+      <a-entity static-body gltf-model="#grass2.glb" position="0.665 0.391 -3.211" scale="0.15 0.15 0.15" rotation="0 0 0"></a-entity>
+
+      <a-entity static-body gltf-model="#palmier.glb" position="-0.92 2.9 -4" scale="30 30 30" rotation="-180 0 0"></a-entity>
+      <a-entity static-body gltf-model="#palmier.glb" position="-0.20 2.9 -4.366" scale="30 30 30" rotation="-180 20 0"></a-entity>
+     
+      <a-entity static-body gltf-model="#liane.glb" position="-1.05 2.9 -4.706" scale="1.5 1.5 1.5" rotation="-180 0 0"></a-entity>
+      <a-entity static-body gltf-model="#liane.glb" position="0.285 2.9 -4.325" scale="1.5 1.5 1.5" rotation="-180 0 0"></a-entity>
+      <a-entity static-body gltf-model="#liane.glb" position="-0.04 2.9 -3.157" scale="1.5 1.5 1.5" rotation="-180 0 0"></a-entity>
+
+      <a-entity static-body gltf-model="#liane2" position="-0.83 2.9 _3.38" scale="0.005 0.005 0.005" rotation="-180 20 0"></a-entity>
+      <a-entity static-body gltf-model="#liane2" position="-0.83 2.9 -4.607" scale="0.005 0.005 0.005" rotation="-180 20 0"></a-entity>
+      <a-entity static-body gltf-model="#liane2" position="0.617 2.9 -4.533" scale="0.005 0.005 0.005" rotation="-180 20 0"></a-entity>
+      <a-entity static-body gltf-model="#liane2" position="0.083 2.9 -3.793" scale="0.005 0.005 0.005" rotation="-180 20 0"></a-entity>
+    
+      
+      <a-entity static-body gltf-model="#grass3.glb" position="-0.48 1.669 -2.654" scale="0.015 0.015 0.015" rotation="-90 0 0"></a-entity>
+      <a-entity static-body gltf-model="#grass3.glb" position="-1.48 0.450 -4.840" scale="0.01 0.01 0.01" rotation="0 0 -45"></a-entity>
+      <a-entity static-body gltf-model="#grass3.glb" position="1.524 1.278 -4.220" scale="0.015 0.015 0.015" rotation="0 0 90"></a-entity>
+      <a-entity static-body gltf-model="#grass3.glb" position="-0.44 -0.01 -3.673" scale="0.015 0.015 0.015" rotation="0 20 0"></a-entity>
+      <a-entity static-body gltf-model="#grass3.glb" position="-1.52 2.202 -4.220" scale="0.015 0.015 0.015" rotation="0 0 -90"></a-entity>
+  
+
+
+      <a-plane src="#tag1" static-body transparent="true" position="-0.38 1.908 -5.487" rotation="0 0 20" scale="2 1.5 1.5"></a-plane>
+      <a-plane src="#tag2" static-body transparent="true" position="-1.46 2.335 -3.564" rotation="0 90 0" scale="2 1.5 1.5"></a-plane>
+      <a-plane src="#tag3" static-body transparent="true" position="0.065 1.637 -2.617" rotation="0 -180 0" scale="2 2 2"></a-plane>
+      <a-plane src="#tag4" static-body transparent="true" position="1.529 1.833 -3.406" rotation="0 -90 0" scale="2 1.5 1.5"></a-plane>
+
+      <a-plane src="#mur" static-body position="0 1.5 -2.5" rotation="0 0 0" width="3" height="3"></a-plane>
+      <a-plane src="#mur" static-body position="0 1.5 -5.5" rotation="0 0 0" width="3" height="3" ></a-plane>
+      <a-plane src="#mur" static-body position="1.5 1.5 -4" rotation="0 90 0" width="3" height="3" ></a-plane>
+      <a-plane src="#mur" static-body position="-1.5 1.5 -4" rotation="0 90 0" width="3" height="3" ></a-plane>
+      
+      <a-plane src="#sol" static-body repeat="2 3" position="0 0 -4" rotation="-90 0 0" width="3" height="3"></a-plane>
+     
+      <a-plane src="#plafond" static-body repeat="1 1" position="0 3 -4" rotation="90 0 0" width="3" height="3"></a-plane>
+
+      <a-sky color="black"></a-sky>
+
+      <a-entity camera look-controls wasd-controls="acceleration: 10" position="0 1.6 -4"></a-entity>
+       
+
+
+    </a-scene physics>
+
+  </body>
+  
+</html>
