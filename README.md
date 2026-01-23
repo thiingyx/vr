@@ -2,5 +2,5 @@
 
 - [labyrinthe](http://thiingyx.github.io/vr/AFRAME/WebVR/labyrinthe.html)
 - ["what a mess"](http://thiingyx.github.io/vr/AFRAME/WebVR/gravite.html)
-- ["paysage vr"](http://thiingyx.github.io/skybox)
+- ["paysage vr"](http://thiingyx.github.io/skybox/skybox.html)
 
